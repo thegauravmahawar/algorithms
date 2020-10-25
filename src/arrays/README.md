@@ -69,9 +69,9 @@ need to keep track of.
 public class Main {
 
     public static void main(String... args) {
-        int[] numbers = new int[5]; //5 is the capacity of the array.
-        numbers[0] = 1;
-        numbers[3] = 4;
+        int[] numbers = new int[5];
+        numbers[0] = 1; //array length is 1.
+        numbers[3] = 4; //array length is 2.
     }
 }
 ```
