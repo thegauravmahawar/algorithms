@@ -1,7 +1,5 @@
 package problems;
 
-import java.util.Arrays;
-
 /**
  * @author Gaurav Mahawar
  * @see <a href="https://leetcode.com/problems/merge-sorted-array/">Merge Sorted Array</a>
@@ -61,10 +59,7 @@ public class MergeSortedArray {
      */
     private static void merge(int[] nums1, int m, int[] nums2, int n) {
 
-        if (nums2.length == 0) {
-            System.out.println(Arrays.toString(nums1));
-            return;
-        }
+        if (nums2.length == 0) return;
 
         int[] nums3 = new int[m + n];
         int i = 0, j = 0, k = 0;
@@ -78,6 +73,5 @@ public class MergeSortedArray {
         while (i < m && nums1[i] != 0) nums3[k++] = nums1[i++];
         while (j < n) nums3[k++] = nums2[j++];
         for (int r = 0; r < nums1.length; r++) nums1[r] = nums3[r];
-        System.out.println(Arrays.toString(nums1));
     }
 }
