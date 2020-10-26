@@ -9,4 +9,5 @@
 
 <h3>Topics</h3>
 
+- [Basics](basics)
 - [Problems](src/problems)
