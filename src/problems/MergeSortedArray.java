@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 /**
  * @author Gaurav Mahawar
- * @see <a href="https://leetcode.com/problems/two-sum">Two Sum</a>
+ * @see <a href="https://leetcode.com/problems/merge-sorted-array/">Merge Sorted Array</a>
  */
 public class MergeSortedArray {
 
@@ -54,9 +54,9 @@ public class MergeSortedArray {
      * We compare 2 elements, one each from nums1[i]and nums2[j] respectively and add the smaller element to nums3[k] and incrementing the index
      * of the array from which the smaller value is picked from (i++ or j++).
      *
-     * Once the loop has ended, we copy remaining values in nums1 and nums2 to nums3.
+     * Once the loop has ended, we copy any remaining values in nums1 and nums2 to nums3.
      *
-     * Finally, we overwrite nums1 with the values nums3.
+     * Finally, we overwrite nums1 with the values in nums3.
      *
      */
     private static void merge(int[] nums1, int m, int[] nums2, int n) {
