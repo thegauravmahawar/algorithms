@@ -76,3 +76,22 @@ public class Main {
 }
 ```
 
+<h3>Array Insertions</h3>
+
+Inserting a new element into an Array can take many forms:
+
+- Inserting a new element at the end of the Array.
+- Inserting a new element at the beginning of the Array.
+- Inserting a new element at any given index inside the Array.
+
+**Inserting at the End of an Array**
+
+![Array Insertion 1](../../assets/Array_Insertion_1.png)
+
+**Inserting at the Start of an Array**
+
+![Array Insertion 2](../../assets/Array_Insertion_2.png)
+
+**Inserting Anywhere in the Array**
+
+![Array Insertion 3](../../assets/Array_Insertion_3.png)
