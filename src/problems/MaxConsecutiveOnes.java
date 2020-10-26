@@ -23,7 +23,8 @@ public class MaxConsecutiveOnes {
 
     /**
      * @param nums
-     * @return We keep two variables - max and curr. curr will keep track of the latest consecutive ones, and max will keep track
+     * @return int
+     * We keep two variables - max and curr. curr will keep track of the latest consecutive ones, and max will keep track
      * of the maximum consecutive ones encountered till now.
      * <p>
      * We iterate over the array, when value in the array is 0, we get the maximum value out max and curr. We store this value

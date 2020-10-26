@@ -17,7 +17,8 @@ public class FindNumbersWithEvenNumberOfDigits {
 
     /**
      * @param nums
-     * @return Keep a counter to keep track of the number of even digit numbers in the array. Iterate over the array and check
+     * @return int
+     * Keep a counter to keep track of the number of even digit numbers in the array. Iterate over the array and check
      * that each number has even digits. If the number has even digits than increment the counter.
      * <p>
      * To check if a given number has even digits - keep a counter to keep track of the number of digits in the number.

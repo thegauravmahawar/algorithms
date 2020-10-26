@@ -17,7 +17,8 @@ public class ThreeConsecutiveOdds {
 
     /**
      * @param arr
-     * @return For each iteration check three consecutive numbers at once and see if all three are odds. If they are return true.
+     * @return boolean
+     * For each iteration check three consecutive numbers at once and see if all three are odds. If they are return true.
      * To check three consecutive numbers at once, start iteration from index 2 till the end of the array, and keep track of the
      * previous 2 elements.
      */

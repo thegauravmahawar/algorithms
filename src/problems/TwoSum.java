@@ -18,7 +18,8 @@ public class TwoSum {
     /**
      * @param nums
      * @param target
-     * @return With each iteration find the difference between the target and the current element (target - nums[i]).
+     * @return int[]
+     * With each iteration find the difference between the target and the current element (target - nums[i]).
      * This difference will refer to the number that we are looking for. If this number is available in the array then
      * we have the pair otherwise we don't.
      * <p>
