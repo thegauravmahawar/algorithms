@@ -1,7 +1,5 @@
 package problems;
 
-import java.util.Arrays;
-
 /**
  * @author Gaurav Mahawar
  * @see <a href="https://leetcode.com/problems/remove-element/">Remove Element</a>
@@ -39,6 +37,19 @@ public class RemoveElement {
      * @param nums
      * @param val
      * @return int
+     *
+     * First maintain a count = 0, which keeps track of the number of matching elements. The final value will be capacity - count.
+     *
+     * Apart from removing the element, for each removal we need to shift the "remaining" elements one index to the left.
+     *
+     * To do this, we iterate over the array and whenever an element is encountered which is equal to the value that is to be removed, look
+     * for an index where the value is different from the matching value.
+     *
+     * If we are not able to find such a value (nums[i] == nums[j]), then, all elements have been switched and there are no remaining elements
+     * to be removed, so, count will be nums.length - i.
+     *
+     * If we do find an index where the value is different, then we switch the values and keep repeating this until all values are switched.
+     *
      */
     private static int removeElement(int[] nums, int val) {
 
@@ -48,14 +59,24 @@ public class RemoveElement {
 
         for (int i = 0; i < nums.length; i++) {
             if (nums[i] == val) {
-                int j = Math.min(i + 1, nums.length - 1);
+                int j = Math.min(i + 1, nums.length - 1); //so that index j doesn't go past the array capacity.
+
+                //look for index where value is different from val.
                 while (nums[j] == val && j < nums.length - 1) {
                     j++;
                 }
+
+                /**
+                 * If the below condition is matching, all elements are switched and / or there are no elements remaining matching val.
+                 * Here we set count = nums.length - i, nums.length is the capacity, and i will denote the index upto which all values are switched
+                 * and no value is present that is to be removed. We break in this condition as we know that there are no elements remaining to be switched.
+                 */
                 if (nums[i] == nums[j]) {
                     count = nums.length - i;
                     break;
                 }
+
+                //switch element at nums[j] with element at nums[i].
                 int temp = nums[i];
                 nums[i] = nums[j];
                 nums[j] = temp;
