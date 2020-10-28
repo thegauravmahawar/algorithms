@@ -3,6 +3,7 @@
 <h3>Arrays</h3>
 
 - [Two Sum](TwoSum.java)
+- [Remove Element](RemoveElement.java)
 - [Merge Sorted Array](MergeSortedArray.java)
 - [Max Consecutive Ones](MaxConsecutiveOnes.java)
 - [Squares of a Sorted Array](SquaresOfASortedArray.java)
