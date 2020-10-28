@@ -105,3 +105,60 @@ Once the space is created for the new element, we proceed with the insertion. If
 a special case of inserting an element at a given index-in that case, the given index was `0`.
 
 ![Array Insertion 3](../../assets/Array_Insertion_3.png)
+
+<h3>Array Deletions</h3>
+
+Deletion in an Array works in a very similar manner to insertion, and has the same three different cases:
+
+- Deleting the last element of the Array.
+- Deleting the first element of the Array.
+- Deletion at any given index.
+
+**Deleting From the End of an Array**
+
+Deleting from the end of an Array is the least time consuming of the three cases. Insertion at the end of an Array was also 
+the least time-consuming case for insertion.
+
+*Reminder*: `length` is the number of elements currently present in the array.
+
+```java
+public class Main {
+
+    public static void main(String... args) {
+        
+        int[] arr = new int[10]; //declare array with capacity of 10 elements.
+
+        int length = 0; //the array currently contains 0 elements.
+
+        //add elements at the first 6 indexes of the array
+        for (int i = 0; i < 6; i++) {
+            arr[length] = i;
+            length++;
+        }
+    }
+
+}
+```
+
+The `length` variable in the above code keeps track of the next index that is free for inserting a new element. This is always 
+the same value as the overall length of the Array. When we add elements to the Array, we also increment the `length` variable.
+
+```java
+//Deletion from the end is as simple as reducing the length of the array by 1.
+length--;
+``` 
+
+Even though we call it a deletion, its not like we actually freed up the space for a new element. This is because we don't actually need 
+to free up any space. Simply overwriting the value at a certain index deletes the element at that index. Seeing as the length variable 
+in our examples tells us the next index where we can insert a new element, reducing it by one ensures the next new element is written over the deleted one. 
+This also indicates that the Array now contains one less element, which is exactly what we want programmatically.
+
+![Array Deletion 1](../../assets/Array_Deletion_1.png)
+
+**Deleting From the Start of an Array**
+
+![Array Deletion 2](../../assets/Array_Deletion_2.png)
+
+**Deleting From Anywhere in the Array**
+
+![Array Deletion 3](../../assets/Array_Deletion_3.png)
