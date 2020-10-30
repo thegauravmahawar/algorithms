@@ -38,7 +38,7 @@ public class ValidMountainArray {
      * @return boolean
      *
      * Basic idea is to find the first tip index (the first index, after which the next value is smaller or equal).
-     * If the tip index is the first or the last index, that means the tip is at start or the end, it will not make a valid mountain.
+     * If the tip index is the first or the last index, that means the tip is at start or the end, and it will not form a valid mountain.
      *
      * Here, we have established that the tip index will lie from index 1 to 2nd last index.
      * Now, using the tip index as the initial index, check that out of any two adjacent values, the right sided value is
