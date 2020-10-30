@@ -26,18 +26,26 @@ public class RemoveDuplicatesFromSortedArray {
         System.out.println(removeDuplicates(nums5));
     }
 
+    /**
+     * @param nums
+     * @return int
+     */
     private static int removeDuplicates(int[] nums) {
 
         if (nums == null || nums.length == 0) return 0;
         if (nums.length == 1) return 1;
 
-        int j = 0;
-        for (int i = 0; i < nums.length - 1; i++) {
-            if (nums[i] != nums[i + 1])
-                nums[j++] = nums[i];
-        }
+        /**
+         * j is used to keep track of the index where the next unique element will be written.
+         * j is initialized to 1 as that is the initial index where value will be written if there are duplicates, 0th index will be the smallest element.
+         */
+        int j = 1;
 
-        nums[j++] = nums[nums.length - 1];
+        for (int i = 0; i < nums.length - 1; i++) {
+            //whenever two adjacent elements are not matching, use the right sided element to be written at index j, and increment j.
+            if (nums[i] != nums[i + 1])
+                nums[j++] = nums[i + 1];
+        }
         return j;
     }
 }
