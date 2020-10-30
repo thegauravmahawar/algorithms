@@ -10,4 +10,5 @@
 - [Squares of a Sorted Array](SquaresOfASortedArray.java)
 - [Duplicate Zeros](DuplicateZeros.java)
 - [Find Numbers with Even Number of Digits](FindNumbersWithEvenNumberOfDigits.java)
+- [Check If N and Its Double Exist](CheckIfNAndItsDoubleExist.java)
 - [Three Consecutive Odds](ThreeConsecutiveOdds.java)
