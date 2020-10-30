@@ -1,6 +1,6 @@
 ## Arrays
 
-> An Array is a collection of items. The items could be integers, strings, DVDs, games, books—anything really. 
+> An Array is a collection of items. The items could be integers, strings, DVDs, games, books-anything really. 
 > The items are stored in neighboring (contiguous) memory locations. Because they're stored together, checking through 
 > the entire collection of items is straightforward.
 
@@ -209,3 +209,31 @@ public class Main {
 
 }
 ``` 
+
+<h3>Search in an Array</h3>
+
+Searching means to find an occurrence of a particular element in the Array and return its position. We might need to search 
+an Array to find out whether or not an element is present in the Array. We might also want to search an Array that is arranged 
+in a specific fashion to determine which index to insert a new element at.
+
+If we know the index in the Array that *may* contain the element we're looking for, then the search becomes a constant time operation-we 
+simply go to the given index and check whether or not the element is there.
+
+**Linear Search**
+
+If the index is not known, which is the case most of the time, then we can check every element in the Array. We continue checking 
+elements until we find the element we're looking for, or we reach the end of the Array. In the worst case, a linear search ends up checking 
+the entire Array. Therefore, the time complexity for a linear search is `O(N)`.
+
+![Array Search 1](../../assets/Array_Search_1.png)
+
+**Binary Search**
+
+If the elements in the Array are in *sorted order*, then we can use binary search. Binary search is where we repeatedly look 
+at the middle element in the Array, and determine whether the element we're looking for must be to the left, or to the right. 
+Each time we do this, we're able to halve the number of elements we still need to search, making binary search a lot faster than linear search!
+
+The downside of binary search though is that it only works if the data is sorted. If we only need to perform a single search, 
+then it's faster to just do a linear search, as it takes longer to sort than to linear search. If we're going to be performing a lot of searches, 
+it is often worth sorting the data first so that we can use binary search for the repeated searches.
+

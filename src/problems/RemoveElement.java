@@ -62,6 +62,7 @@ public class RemoveElement {
                 int j = Math.min(i + 1, nums.length - 1); //so that index j doesn't go past the array capacity.
 
                 //look for index where value is different from val.
+                //loop until value is not equal to val and j is less than the max index.
                 while (nums[j] == val && j < nums.length - 1) {
                     j++;
                 }
