@@ -7,6 +7,7 @@
 - [Remove Element](RemoveElement.java)
 - [Merge Sorted Array](MergeSortedArray.java)
 - [Max Consecutive Ones](MaxConsecutiveOnes.java)
+- [Valid Mountain Array](ValidMountainArray.java)
 - [Squares of a Sorted Array](SquaresOfASortedArray.java)
 - [Duplicate Zeros](DuplicateZeros.java)
 - [Find Numbers with Even Number of Digits](FindNumbersWithEvenNumberOfDigits.java)
