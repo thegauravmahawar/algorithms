@@ -29,6 +29,20 @@ public class ReplaceElementsWithGreatestElementOnRightSide {
     /**
      * @param arr
      * @return int[]
+     *
+     * Since we have to do this in-place and the elements will be updated during comparison, so we will use separate variables
+     * to keep track of max and min values.
+     *
+     * Start with max = last element. Iterate from the end of the array till the start of the array and compare the max value
+     * to the next element. Note here that we don't have to compare adjacent values, but the max that is encountered till now.
+     *
+     * If max is greater than the next element, then update the value at the index with the max value. If the next element is
+     * greater then:
+     * 1. Store the current max value in the min variable. This is important because we have to write the current max value
+     *    to the next element even though it is larger. But use the next element from now on as the max value.
+     * 2. Update the max value to the current element.
+     * 3. Update the current element with the min variable.
+     *
      */
     private static int[] replaceElements(int[] arr) {
         if (arr == null || arr.length == 0) return arr;

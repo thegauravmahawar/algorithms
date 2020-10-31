@@ -13,3 +13,4 @@
 - [Find Numbers with Even Number of Digits](FindNumbersWithEvenNumberOfDigits.java)
 - [Check If N and Its Double Exist](CheckIfNAndItsDoubleExist.java)
 - [Three Consecutive Odds](ThreeConsecutiveOdds.java)
+- [Replace Elements with Greatest Element on Right Side](ReplaceElementsWithGreatestElementOnRightSide.java)
