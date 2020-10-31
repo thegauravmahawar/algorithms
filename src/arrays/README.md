@@ -237,3 +237,9 @@ The downside of binary search though is that it only works if the data is sorted
 then it's faster to just do a linear search, as it takes longer to sort than to linear search. If we're going to be performing a lot of searches, 
 it is often worth sorting the data first so that we can use binary search for the repeated searches.
 
+<h3>In-Place Array Operations</h3>
+
+**In-place** array algorithms operate on the given array to achieve the expected output and don't require extra memory space.
+
+An important difference for *in-place* vs *not in-place* is that in-place modifies the input Array. This means that other functions 
+can no longer access the original data, because it has been overwritten.
