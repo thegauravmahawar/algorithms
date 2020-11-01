@@ -15,3 +15,4 @@
 - [Three Consecutive Odds](ThreeConsecutiveOdds.java)
 - [Replace Elements with Greatest Element on Right Side](ReplaceElementsWithGreatestElementOnRightSide.java)
 - [Move Zeroes](MoveZeroes.java)
+- [Sort Array By Parity](SortArrayByParity.java)
