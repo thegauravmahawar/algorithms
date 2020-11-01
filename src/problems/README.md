@@ -16,3 +16,5 @@
 - [Replace Elements with Greatest Element on Right Side](ReplaceElementsWithGreatestElementOnRightSide.java)
 - [Move Zeroes](MoveZeroes.java)
 - [Sort Array By Parity](SortArrayByParity.java)
+- [Height Checker](HeightChecker.java)
+- [Find All Numbers Disappeared in an Array](FindAllNumbersDisappearedInAnArray.java)
