@@ -18,3 +18,4 @@
 - [Sort Array By Parity](SortArrayByParity.java)
 - [Height Checker](HeightChecker.java)
 - [Find All Numbers Disappeared in an Array](FindAllNumbersDisappearedInAnArray.java)
+- [Find Pivot Index](FindPivotIndex.java)
