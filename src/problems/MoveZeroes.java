@@ -39,7 +39,7 @@ public class MoveZeroes {
      *
      * @param nums
      *
-     * Use two-pointer technique to achieve this. i will keep track of the current element, and j will be used to find the index
+     * Use two-pointer technique to achieve this. We will keep track of the current element, and j will be used to find the index
      * with a non-zero value.
      *
      * Iterate over the array and if nums[i] == 0, then iterate over the rest of the array to find a index which has a non-zero value.

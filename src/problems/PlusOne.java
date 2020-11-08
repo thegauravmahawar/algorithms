@@ -85,9 +85,9 @@ public class PlusOne {
         if(carry == 1) {
             //create new array with size - len + 1.
             int[] newDigits = new int[len + 1];
-            newDigits[0] = 1;
-            for(int i = 1; i < digits.length; i++) {
-                newDigits[i] = digits[i];
+            newDigits[0] = carry;
+            for(int i = 0; i < digits.length; i++) {
+                newDigits[i + 1] = digits[i];
             }
             return newDigits;
         }
