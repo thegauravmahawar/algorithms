@@ -21,3 +21,4 @@
 - [Find Pivot Index](FindPivotIndex.java)
 - [Largest Number At Least Twice of Others](LargestNumberAtLeastTwiceOfOthers.java)
 - [Plus One](PlusOne.java)
+- [Rotate Array](RotateArray.java)
