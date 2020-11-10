@@ -26,6 +26,7 @@
 <h3>Strings</h3>
 
 - [Longest Substring Without Repeating Characters](LongestSubstringWithoutRepeatingCharacters.java)
+- [Longest Common Prefix](LongestCommonPrefix.java)
 
 <h3>Math</h3>
 
