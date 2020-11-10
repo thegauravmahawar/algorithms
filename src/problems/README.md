@@ -26,3 +26,7 @@
 <h3>Strings</h3>
 
 - [Longest Substring Without Repeating Characters](LongestSubstringWithoutRepeatingCharacters.java)
+
+<h3>Math</h3>
+
+- [Reverse Integer](ReverseInteger.java)
