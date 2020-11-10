@@ -30,3 +30,4 @@
 <h3>Math</h3>
 
 - [Reverse Integer](ReverseInteger.java)
+- [Palindrome Number](PalindromeNumber.java)
