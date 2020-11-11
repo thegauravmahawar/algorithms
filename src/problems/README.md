@@ -22,6 +22,7 @@
 - [Largest Number At Least Twice of Others](LargestNumberAtLeastTwiceOfOthers.java)
 - [Plus One](PlusOne.java)
 - [Rotate Array](RotateArray.java)
+- [Third Maximum Number](ThirdMaximumNumber.java)
 
 <h3>Strings</h3>
 
