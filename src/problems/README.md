@@ -24,6 +24,7 @@
 - [Rotate Array](RotateArray.java)
 - [Third Maximum Number](ThirdMaximumNumber.java)
 - [Reverse String](ReverseString.java)
+- [Search Insert Position](SearchInsertPosition.java)
 
 <h3>Strings</h3>
 
