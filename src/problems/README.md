@@ -31,6 +31,7 @@
 - [Longest Substring Without Repeating Characters](LongestSubstringWithoutRepeatingCharacters.java)
 - [Longest Common Prefix](LongestCommonPrefix.java)
 - [Implement strStr()](ImplementStrStr.java)
+- [Length of Last Word](LengthOfLastWord.java)
 
 <h3>Math</h3>
 
