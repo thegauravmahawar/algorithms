@@ -33,6 +33,7 @@
 - [Implement strStr()](ImplementStrStr.java)
 - [Length of Last Word](LengthOfLastWord.java)
 - [Roman to Integer](RomanToInteger.java)
+- [Valid Parentheses](ValidParentheses.java)
 
 <h3>Math</h3>
 

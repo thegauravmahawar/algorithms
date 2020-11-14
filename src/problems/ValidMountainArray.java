@@ -53,11 +53,8 @@ public class ValidMountainArray {
         int tipIndex = 0;
         for (int i = 0; i < A.length - 1; i++) {
             //if right sided index value is more than the left sided index value, assign tipIndex the value of right sided index.
-            if (A[i] < A[i + 1]) {
-                tipIndex = i + 1;
-            } else {
-                break;
-            }
+            if (A[i] < A[i + 1]) tipIndex = i + 1;
+            else break;
         }
 
         //if tipIndex is 0 or the last index, that means, the tip is at the start or the end, which does not fulfill the valid mountain definition.
@@ -65,9 +62,7 @@ public class ValidMountainArray {
 
         //using the tipIndex as the initial value, iterate over the array, and check if out of any two adjacent values, the right sided value
         //is greater than or equal to the left sided value, if so, return false.
-        for (int i = tipIndex; i < A.length - 1; i++) {
-            if (A[i + 1] >= A[i]) return false;
-        }
+        for (int i = tipIndex; i < A.length - 1; i++) if (A[i + 1] >= A[i]) return false;
 
         return true;
     }
