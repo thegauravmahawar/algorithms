@@ -40,3 +40,4 @@
 
 - [Reverse Integer](ReverseInteger.java)
 - [Palindrome Number](PalindromeNumber.java)
+- [Sqrt(x)](Sqrt.java)
