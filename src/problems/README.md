@@ -25,6 +25,7 @@
 - [Third Maximum Number](ThirdMaximumNumber.java)
 - [Reverse String](ReverseString.java)
 - [Search Insert Position](SearchInsertPosition.java)
+- [Maximum Subarray](MaximumSubArray.java)
 
 <h3>Strings</h3>
 
