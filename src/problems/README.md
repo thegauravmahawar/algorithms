@@ -26,6 +26,7 @@
 - [Reverse String](ReverseString.java)
 - [Search Insert Position](SearchInsertPosition.java)
 - [Maximum Subarray](MaximumSubArray.java)
+- [Two Sum II - Input array is sorted](TwoSum2.java)
 
 <h3>Strings</h3>
 
