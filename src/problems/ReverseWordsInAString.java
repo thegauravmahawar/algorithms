@@ -16,13 +16,12 @@ public class ReverseWordsInAString {
     }
 
     /**
-     *
      * @param s
      * @return String
      */
     private static String reverseWords(String s) {
 
-        if(s == null || s.length() == 0) return s;
+        if (s == null || s.length() == 0) return s;
 
         s = s.trim().replaceAll("\\s+", " ");
         String[] strs = s.split(" ");
@@ -30,7 +29,7 @@ public class ReverseWordsInAString {
         int i = strs.length - 1;
 
         StringBuilder sb = new StringBuilder();
-        while(i > 0) {
+        while (i > 0) {
             sb.append(strs[i]).append(" ");
             i--;
         }

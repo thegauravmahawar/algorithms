@@ -18,13 +18,9 @@ public class ReverseString {
     }
 
     /**
-     *
-     * @param s
-     *
-     * We will use the two-pointer approach here. We will keep a pointer i starting with 0, and a pointer j starting
-     * with the end of the array (last element). We will swap the values of the element at the ith and jth index. We will
-     * repeat this until i < j (reaching mid point of the array).
-     *
+     * @param s We will use the two-pointer approach here. We will keep a pointer i starting with 0, and a pointer j starting
+     *          with the end of the array (last element). We will swap the values of the element at the ith and jth index. We will
+     *          repeat this until i < j (reaching mid point of the array).
      */
     private static void reverseString(char[] s) {
 
@@ -33,7 +29,7 @@ public class ReverseString {
         int i = 0, j = s.length - 1;
 
         char temp;
-        while(i < j) {
+        while (i < j) {
             temp = s[i];
             s[i] = s[j];
             s[j] = temp;

@@ -13,7 +13,6 @@ public class Sqrt {
     }
 
     /**
-     *
      * @param x
      * @return int
      */

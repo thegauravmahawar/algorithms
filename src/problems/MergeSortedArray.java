@@ -41,21 +41,18 @@ public class MergeSortedArray {
      * @param nums1
      * @param m
      * @param nums2
-     * @param n
-     *
-     * First we check that nums2 has elements. If not we return as nums1 is already sorted and nums2 will not impact the order.
-     *
-     * NOTE: m is not the length of the array nums1, it is the number of elements that are present in the array (excluding 0's present at the end of the array).
-     *
-     * To merge 2 sorted arrays, we first maintain a third array arr3 with size of m + n (to hold all values after merge).
-     * We iterate over nums1 from i to m (number of elements in nums1), and over nums2 from j to n (length of nums2).
-     * We compare 2 elements, one each from nums1[i]and nums2[j] respectively and add the smaller element to nums3[k] and incrementing the index
-     * of the array from which the smaller value is picked from (i++ or j++).
-     *
-     * Once the loop has ended, we copy any remaining values in nums1 and nums2 to nums3.
-     *
-     * Finally, we overwrite nums1 with the values in nums3.
-     *
+     * @param n     First we check that nums2 has elements. If not we return as nums1 is already sorted and nums2 will not impact the order.
+     *              <p>
+     *              NOTE: m is not the length of the array nums1, it is the number of elements that are present in the array (excluding 0's present at the end of the array).
+     *              <p>
+     *              To merge 2 sorted arrays, we first maintain a third array arr3 with size of m + n (to hold all values after merge).
+     *              We iterate over nums1 from i to m (number of elements in nums1), and over nums2 from j to n (length of nums2).
+     *              We compare 2 elements, one each from nums1[i]and nums2[j] respectively and add the smaller element to nums3[k] and incrementing the index
+     *              of the array from which the smaller value is picked from (i++ or j++).
+     *              <p>
+     *              Once the loop has ended, we copy any remaining values in nums1 and nums2 to nums3.
+     *              <p>
+     *              Finally, we overwrite nums1 with the values in nums3.
      */
     private static void merge(int[] nums1, int m, int[] nums2, int n) {
 

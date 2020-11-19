@@ -36,22 +36,18 @@ public class MoveZeroes {
     }
 
     /**
-     *
-     * @param nums
-     *
-     * Use two-pointer technique to achieve this. We will keep track of the current element, and j will be used to find the index
-     * with a non-zero value.
-     *
-     * Iterate over the array and if nums[i] == 0, then iterate over the rest of the array to find a index which has a non-zero value.
-     * Now assign the value at nums[j] to nums[i], and assign nums[j] = 0.
-     *
+     * @param nums Use two-pointer technique to achieve this. We will keep track of the current element, and j will be used to find the index
+     *             with a non-zero value.
+     *             <p>
+     *             Iterate over the array and if nums[i] == 0, then iterate over the rest of the array to find a index which has a non-zero value.
+     *             Now assign the value at nums[j] to nums[i], and assign nums[j] = 0.
      */
     private static void moveZeroes(int[] nums) {
 
         if (nums == null || nums.length == 0) return;
 
-        for(int i = 0, j = 0; i < nums.length && j < nums.length; i++, j++) {
-            if(nums[i] == 0) {
+        for (int i = 0, j = 0; i < nums.length && j < nums.length; i++, j++) {
+            if (nums[i] == 0) {
                 while (nums[j] == 0 && j < nums.length - 1) {
                     j++;
                 }

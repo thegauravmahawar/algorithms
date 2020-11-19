@@ -15,13 +15,11 @@ public class SortArrayByParity {
     }
 
     /**
-     *
      * @param A
      * @return int[]
-     *
+     * <p>
      * Iterate over the array, and whenever we encounter an odd element, we look for an even element if the remaining array
      * and switch them.
-     *
      */
     private static int[] sortArrayByParity(int[] A) {
 

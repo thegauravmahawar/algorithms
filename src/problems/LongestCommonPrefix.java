@@ -22,18 +22,16 @@ public class LongestCommonPrefix {
     }
 
     /**
-     *
      * @param strs
      * @return String
-     *
+     * <p>
      * We will use StringBuilder here so as to avoid String concatenation which adversely impacts the performance of the function.
-     *
+     * <p>
      * First we will compare the first two Strings of the array and take out the longest common prefix out of them. We will use
      * this prefix as reference to work with the remaining Strings. The prefix will serve two purposes: Firstly, this will be our longest
      * prefix, so for the remaining Strings we need to process up to the length of this prefix. Secondly, we will compare all following
      * Strings against this prefix and see if the prefix that comes out of them is equal to or smaller than our reference prefix. If the
      * length is same so we continue to the next String, if not, we update the reference prefix with the smaller prefix.
-     *
      */
     private static String longestCommonPrefix(String[] strs) {
 
@@ -52,8 +50,8 @@ public class LongestCommonPrefix {
 
         //loop over the first two strings and compare both strings character by character. If characters are matching
         //append to the StringBuilder (to build the reference prefix).
-        while(i < s0Len && j < s1Len) {
-            if(strs[0].charAt(i) == strs[1].charAt(j)) longestPrefix.append(strs[0].charAt(i));
+        while (i < s0Len && j < s1Len) {
+            if (strs[0].charAt(i) == strs[1].charAt(j)) longestPrefix.append(strs[0].charAt(i));
             else break;
             i++;
             j++;
@@ -67,8 +65,8 @@ public class LongestCommonPrefix {
             i = 0;
             s0Len = Math.min(strs[k].length(), longestPrefix.length());
             //compare the current String against the longest prefix
-            while(i < s0Len) {
-                if(strs[k].charAt(i) == longestPrefix.charAt(i)) prefix.append(strs[k].charAt(i));
+            while (i < s0Len) {
+                if (strs[k].charAt(i) == longestPrefix.charAt(i)) prefix.append(strs[k].charAt(i));
                 else break;
                 i++;
             }

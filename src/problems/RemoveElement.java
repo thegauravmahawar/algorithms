@@ -37,19 +37,18 @@ public class RemoveElement {
      * @param nums
      * @param val
      * @return int
-     *
+     * <p>
      * First maintain a count = 0, which keeps track of the number of matching elements. The final value will be capacity - count.
-     *
+     * <p>
      * Apart from removing the element, for each removal we need to shift the "remaining" elements one index to the left.
-     *
+     * <p>
      * To do this, we iterate over the array and whenever an element is encountered which is equal to the value that is to be removed, look
      * for an index where the value is different from the matching value.
-     *
+     * <p>
      * If we are not able to find such a value (nums[i] == nums[j]), then, all elements have been switched and there are no remaining elements
      * to be removed, so, count will be nums.length - i.
-     *
+     * <p>
      * If we do find an index where the value is different, then we switch the values and keep repeating this until all values are switched.
-     *
      */
     private static int removeElement(int[] nums, int val) {
 

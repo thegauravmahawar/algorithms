@@ -16,13 +16,12 @@ public class DuplicateZeros {
     }
 
     /**
-     * @param arr
-     * Iterate over the array, when we encounter an element whose value is 0, we iterate again over the remaining array
-     * elements and move elements one place to the right with starting element being 0.
-     *
-     * After the loop, we need to make sure that we are incrementing the index by 1 (keeping in mind that the value should not
-     * exceed the array length) so that again when the condition is checked for element value as 0, the condition should skip this
-     * element as we have already overwritten that value with 0. If we don't do this, all the values in the array after the first 0, will also become 0.
+     * @param arr Iterate over the array, when we encounter an element whose value is 0, we iterate again over the remaining array
+     *            elements and move elements one place to the right with starting element being 0.
+     *            <p>
+     *            After the loop, we need to make sure that we are incrementing the index by 1 (keeping in mind that the value should not
+     *            exceed the array length) so that again when the condition is checked for element value as 0, the condition should skip this
+     *            element as we have already overwritten that value with 0. If we don't do this, all the values in the array after the first 0, will also become 0.
      */
     private static void duplicateZeros(int[] arr) {
 

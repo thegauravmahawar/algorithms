@@ -29,10 +29,10 @@ public class CheckIfNAndItsDoubleExist {
 
         Set<Integer> set = new HashSet<>(arr.length * 2);
 
-        for(int i = 0; i < arr.length; i++) {
-            if(set.contains(arr[i])) return true;
+        for (int i = 0; i < arr.length; i++) {
+            if (set.contains(arr[i])) return true;
 
-            if(arr[i] % 2 == 0) {
+            if (arr[i] % 2 == 0) {
                 set.add(arr[i] / 2);
             }
             set.add(arr[i] * 2);

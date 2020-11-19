@@ -19,19 +19,17 @@ public class TwoSum2 {
     }
 
     /**
-     *
      * @param numbers
      * @param target
      * @return int[]
-     *
+     * <p>
      * Since the array is sorted, for each iteration, we will do a binary search for the diff (target - numbers[i]) in the
      * remaining array. If the diffIndex > i, then we return the two indexes (1-based by adding 1).
-     *
      */
     private static int[] twoSum(int[] numbers, int target) {
         for (int i = 0; i < numbers.length; i++) {
             int diffIndex = binarySearch(numbers, i + 1, numbers.length, target - numbers[i]);
-            if(diffIndex > i) return new int[]{i + 1, diffIndex + 1};
+            if (diffIndex > i) return new int[]{i + 1, diffIndex + 1};
         }
         return new int[]{};
     }

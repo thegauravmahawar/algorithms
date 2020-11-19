@@ -25,16 +25,14 @@ public class SearchInsertPosition {
     }
 
     /**
-     *
      * @param nums
      * @param target
      * @return int
-     *
+     * <p>
      * Perform binary search to look for index of the target.
-     *
+     * <p>
      * When target is greater than the current element, assign low to the index variable. When target is smaller than the current element,
      * assign high to the index variable.
-     *
      */
     private static int searchInsert(int[] nums, int target) {
 

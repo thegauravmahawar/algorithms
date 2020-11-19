@@ -23,17 +23,15 @@ public class LongestSubstringWithoutRepeatingCharacters {
     }
 
     /**
-     *
      * @param s
      * @return int
-     *
+     * <p>
      * Use a set to keep track of the substring without repeating characters.
-     *
+     * <p>
      * Whenever we encounter a duplicate character in the string, we remove the oldest character and increment j. This
      * approach has an issue that on encountering a duplicate character i is not incremented, and so until that character
      * is removed from the set we will be stuck. If the duplicate character is just before the current character, then the
      * entire set will become empty before moving ahead with finding the length of the substring without repeating characters.
-     *
      */
     private static int lengthOfLongestSubstring(String s) {
 
@@ -44,7 +42,7 @@ public class LongestSubstringWithoutRepeatingCharacters {
 
         Set<Character> set = new HashSet<>(len);
         while (i < len) {
-            if(set.add(s.charAt(i))) {
+            if (set.add(s.charAt(i))) {
                 max = Math.max(max, set.size());
                 i++;
             } else {

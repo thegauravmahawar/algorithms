@@ -19,11 +19,11 @@ public class ReverseInteger {
         boolean negative = x < 0;
         long y = 0;
         x = negative ? Math.abs(x) : x;
-        while(x > 0) {
+        while (x > 0) {
             y = (y * 10) + x % 10;
             x /= 10;
         }
-        if(y > Math.pow(2, 31) - 1) return 0;
+        if (y > Math.pow(2, 31) - 1) return 0;
         return negative ? (int) (-1 * y) : (int) y;
     }
 }

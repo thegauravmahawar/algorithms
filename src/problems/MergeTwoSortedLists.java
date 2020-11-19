@@ -53,24 +53,31 @@ public class MergeTwoSortedLists {
     }
 
     /**
-     *
      * @param l1
      * @param l2
      * @return LinkedList
-     *
+     * <p>
      * This code is slightly modified compared to the original question. This uses LinkedList as parameters instead of ListNode.
-     *
      */
     private static LinkedList mergeTwoLists(LinkedList l1, LinkedList l2) {
         LinkedList list = new LinkedList();
         ListNode<Integer> ln1 = l1.head;
         ListNode<Integer> ln2 = l2.head;
-        while(ln1 != null || ln2 != null) {
-            if(ln1 == null) { list.add(ln2.data); ln2 = ln2.next; }
-            else if(ln2 == null) { list.add(ln1.data); ln1 = ln1.next; }
-            else {
-                if (ln1.data <= ln2.data) { list.add(ln1.data); ln1 = ln1.next; }
-                else { list.add(ln2.data); ln2 = ln2.next; }
+        while (ln1 != null || ln2 != null) {
+            if (ln1 == null) {
+                list.add(ln2.data);
+                ln2 = ln2.next;
+            } else if (ln2 == null) {
+                list.add(ln1.data);
+                ln1 = ln1.next;
+            } else {
+                if (ln1.data <= ln2.data) {
+                    list.add(ln1.data);
+                    ln1 = ln1.next;
+                } else {
+                    list.add(ln2.data);
+                    ln2 = ln2.next;
+                }
             }
         }
         return list;

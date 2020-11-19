@@ -20,15 +20,14 @@ public class ImplementStrStr {
     }
 
     /**
-     *
      * @param haystack
      * @param needle
      * @return int
      */
     private static int strStr(String haystack, String needle) {
 
-        if(needle == null || needle.isEmpty()) return 0;
-        if(haystack == null || haystack.isEmpty()) return -1;
+        if (needle == null || needle.isEmpty()) return 0;
+        if (haystack == null || haystack.isEmpty()) return -1;
 
         char[] hArr = haystack.toCharArray();
         char[] nArr = needle.toCharArray();
@@ -41,9 +40,9 @@ public class ImplementStrStr {
         boolean needleExists = false;
         int needleIndex = -1;
 
-        for(int i = 0; i < hlen; i++) {
+        for (int i = 0; i < hlen; i++) {
             //when the first character of the needle array matches the current element in the haystack array.
-            if(nc == hArr[i]) {
+            if (nc == hArr[i]) {
                 int k = i; //variable to compare haystack array elements with needle array elements
                 /**
                  *
@@ -63,8 +62,12 @@ public class ImplementStrStr {
                  * condition is met as we need to find the first occurrence.
                  *
                  */
-                if(k + nlen - 1 < hlen) for(int j = 0; j < nlen; j++, k++) if(!(needleExists = nArr[j] == hArr[k])) break;
-                if (needleExists) { needleIndex = i; break; }
+                if (k + nlen - 1 < hlen)
+                    for (int j = 0; j < nlen; j++, k++) if (!(needleExists = nArr[j] == hArr[k])) break;
+                if (needleExists) {
+                    needleIndex = i;
+                    break;
+                }
             }
         }
 

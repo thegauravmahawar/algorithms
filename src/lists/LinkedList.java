@@ -7,18 +7,18 @@ public class LinkedList {
     public ListNode head;
 
     public <T> LinkedList(T... data) {
-        for(T d : data) {
+        for (T d : data) {
             add(d);
         }
     }
 
     public <T> void add(T data) {
-        if(head == null) {
+        if (head == null) {
             head = new ListNode(data);
             return;
         }
         ListNode last = head;
-        while(last.next != null) last = last.next;
+        while (last.next != null) last = last.next;
         last.next = new ListNode(data);
     }
 

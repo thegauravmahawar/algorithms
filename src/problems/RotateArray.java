@@ -20,25 +20,21 @@ public class RotateArray {
     }
 
     /**
-     *
      * @param nums
-     * @param k
-     *
-     * Take out the last element in the array and starting from the second last position shift all the elements to the right.
-     * Now place the last element at the 0th index.
-     *
-     * Time complexity - O(n * r); r is the number of rotations
-     *
+     * @param k    Take out the last element in the array and starting from the second last position shift all the elements to the right.
+     *             Now place the last element at the 0th index.
+     *             <p>
+     *             Time complexity - O(n * r); r is the number of rotations
      */
     private static void rotate(int[] nums, int k) {
 
-        if(nums == null || nums.length == 0) return;
+        if (nums == null || nums.length == 0) return;
 
         int len = nums.length;
         int last;
-        while(k > 0) {
+        while (k > 0) {
             last = nums[len - 1];
-            for(int i = len - 2; i >= 0; i--) {
+            for (int i = len - 2; i >= 0; i--) {
                 nums[i + 1] = nums[i];
             }
             nums[0] = last;
