@@ -50,6 +50,10 @@
 - [Merge Two Sorted Lists](MergeTwoSortedLists.java)
 - [Remove Duplicates from Sorted List](RemoveDuplicatesFromSortedList.java)
 
+<h3>Tree</h3>
+
+- [Maximum Depth of Binary Tree](MaximumDepthOfBinaryTree.java)
+
 <h3>Dynamic Programming</h3>
 
 - [Climbing Stairs](ClimbingStairs.java)
