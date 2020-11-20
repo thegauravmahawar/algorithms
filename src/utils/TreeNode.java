@@ -12,4 +12,12 @@ public class TreeNode<T> {
         this.right = null;
     }
 
+    public TreeNode(T... data) {
+
+    }
+
+    public void print() {
+
+    }
+
 }

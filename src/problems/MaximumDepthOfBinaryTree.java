@@ -20,7 +20,7 @@ public class MaximumDepthOfBinaryTree {
 
     /**
      * @param root
-     * @return
+     * @return int
      */
     private static int maxDepth(TreeNode root) {
 
