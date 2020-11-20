@@ -48,6 +48,7 @@
 <h3>LinkedList</h3>
 
 - [Merge Two Sorted Lists](MergeTwoSortedLists.java)
+- [Remove Duplicates from Sorted List](RemoveDuplicatesFromSortedList.java)
 
 <h3>Dynamic Programming</h3>
 
