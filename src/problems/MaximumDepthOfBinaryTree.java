@@ -1,5 +1,6 @@
 package problems;
 
+import trees.Tree;
 import utils.TreeNode;
 
 /**

@@ -12,12 +12,10 @@ public class TreeNode<T> {
         this.right = null;
     }
 
-    public TreeNode(T... data) {
-
-    }
-
-    public void print() {
-
+    public TreeNode() {
+        this.data = null;
+        this.left = null;
+        this.right = null;
     }
 
 }

@@ -6,9 +6,9 @@ public class LinkedList {
 
     public ListNode head;
 
-    public <T> LinkedList(T... data) {
-        for (T d : data) {
-            add(d);
+    public <T> LinkedList(T... arr) {
+        for (T data : arr) {
+            add(data);
         }
     }
 
@@ -23,10 +23,11 @@ public class LinkedList {
     }
 
     public void print() {
+        StringBuilder sb = new StringBuilder();
         if (head == null) {
+            System.out.println(sb.toString());
             return;
         }
-        StringBuilder sb = new StringBuilder();
         ListNode last = head;
         while (last.next != null) {
             sb.append(last.data).append(", ");
