@@ -122,3 +122,24 @@ public class Main {
 > - If there is a cycle, the fast pointer needs M times to catch up the slower pointer, where M is the length of the cycle in the list.
 
 <h4>Doubly Linked List</h4>
+
+A node in a singly linked list has the value field, and a "next" reference field to link nodes sequentially.
+
+The doubly linked list works in a similar way but has one more reference field which is known as the "prev" field. 
+With this extra field, you are able to know the previous node of the current node.
+
+```java
+// Definition for doubly-linked list.
+class DoublyListNode {
+    int val;
+    DoublyListNode next, prev;
+    DoublyListNode(int x) {val = x;}
+}
+```
+
+Similar to the singly linked list, we will use the head node to represent the whole list.
+
+> We are not able to access a random position in constant time.
+> We have to traverse from the head to get the `i-th` node we want.
+> The time complexity in the worse case will be `O(N)`, where `N` is the length of the linked list. 
+
