@@ -49,6 +49,7 @@
 
 - [Merge Two Sorted Lists](MergeTwoSortedLists.java)
 - [Remove Duplicates from Sorted List](RemoveDuplicatesFromSortedList.java)
+- [Design Linked List](DesignLinkedList.java)
 
 <h3>Tree</h3>
 
