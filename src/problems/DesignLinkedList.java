@@ -55,20 +55,8 @@ public class DesignLinkedList {
 
     static class MyLinkedList {
 
-        class ListNode {
-
-            ListNode next;
-            int val;
-
-            public ListNode(int val) {
-                this.val = val;
-                this.next = null;
-            }
-        }
-
         ListNode head;
         int size;
-
         /**
          * Initialize your data structure here.
          */
@@ -118,8 +106,8 @@ public class DesignLinkedList {
          */
         public void addAtIndex(int index, int val) {
             if (index == 0) addAtHead(val);
-            else if(index == size) addAtTail(val);
-            else if(index > 0 && index < size) {
+            else if (index == size) addAtTail(val);
+            else if (index > 0 && index < size) {
                 int i = 0;
                 ListNode last = head;
                 while (++i < index) last = last.next;
@@ -135,7 +123,7 @@ public class DesignLinkedList {
          * Delete the index-th node in the linked list, if the index is valid.
          */
         public void deleteAtIndex(int index) {
-            if(index < 0 || index > size - 1) return;
+            if (index < 0 || index > size - 1) return;
             if (index == 0) {
                 head = head.next;
                 return;
@@ -145,6 +133,17 @@ public class DesignLinkedList {
             while (++i < index) last = last.next;
             last.next = last.next.next;
             size--;
+        }
+
+        class ListNode {
+
+            ListNode next;
+            int val;
+
+            public ListNode(int val) {
+                this.val = val;
+                this.next = null;
+            }
         }
     }
 }

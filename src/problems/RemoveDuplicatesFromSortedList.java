@@ -33,18 +33,18 @@ public class RemoveDuplicatesFromSortedList {
      */
     private static void deleteDuplicates(LinkedList linkedList) {
 
-        if(linkedList == null || linkedList.head == null) return;
+        if (linkedList == null || linkedList.head == null) return;
 
         ListNode<Integer> current = linkedList.head;
         ListNode<Integer> pointer = current;
-        while(current.next != null) {
-            if(current.data != current.next.data) {
+        while (current.next != null) {
+            if (current.data != current.next.data) {
                 pointer.next = current.next;
                 pointer = pointer.next;
             }
             current = current.next;
         }
-        if(pointer != null && pointer.next != null) pointer.next = null;
+        if (pointer != null && pointer.next != null) pointer.next = null;
     }
 
 }

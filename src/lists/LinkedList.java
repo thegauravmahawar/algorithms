@@ -12,14 +12,15 @@ public class LinkedList {
         }
     }
 
-    public <T> void add(T data) {
+    public <T> ListNode add(T data) {
         if (head == null) {
             head = new ListNode(data);
-            return;
+            return head;
         }
         ListNode last = head;
         while (last.next != null) last = last.next;
         last.next = new ListNode(data);
+        return last.next;
     }
 
     public void print() {
