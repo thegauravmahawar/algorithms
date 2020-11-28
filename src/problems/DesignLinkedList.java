@@ -57,6 +57,7 @@ public class DesignLinkedList {
 
         ListNode head;
         int size;
+
         /**
          * Initialize your data structure here.
          */

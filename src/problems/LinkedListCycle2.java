@@ -44,7 +44,7 @@ public class LinkedListCycle2 {
         Map<Integer, ListNode> seenNodesMap = new HashMap<>();
 
         while (last != null) {
-            if(seenNodesMap.containsKey(last.hashCode())) return seenNodesMap.get(last.hashCode());
+            if (seenNodesMap.containsKey(last.hashCode())) return seenNodesMap.get(last.hashCode());
             seenNodesMap.put(last.hashCode(), last);
             last = last.next;
         }
