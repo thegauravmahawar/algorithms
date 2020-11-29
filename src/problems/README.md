@@ -52,6 +52,7 @@
 - [Design Linked List](DesignLinkedList.java)
 - [Linked List Cycle](LinkedListCycle.java)
 - [Linked List Cycle II](LinkedListCycle2.java)
+- [Intersection of Two Linked Lists](IntersectionOfTwoLinkedLists.java)
 
 <h3>Tree</h3>
 
