@@ -47,8 +47,8 @@ public class IntersectionOfTwoLinkedLists {
             a = a.next;
         }
         ListNode b = headB;
-        while(b != null) {
-            if(seenNodesMap.containsKey(b.hashCode())) return b;
+        while (b != null) {
+            if (seenNodesMap.containsKey(b.hashCode())) return b;
             b = b.next;
         }
 
