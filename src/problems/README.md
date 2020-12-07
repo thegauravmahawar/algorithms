@@ -57,6 +57,7 @@
 <h3>Tree</h3>
 
 - [Maximum Depth of Binary Tree](MaximumDepthOfBinaryTree.java)
+- [Same Tree](SameTree.java)
 
 <h3>Dynamic Programming</h3>
 
