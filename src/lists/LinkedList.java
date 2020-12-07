@@ -23,6 +23,22 @@ public class LinkedList {
         return last.next;
     }
 
+    public void reverse() {
+
+        ListNode previous = null;
+        ListNode current = head;
+        ListNode following = head;
+
+        while(current != null) {
+            following = following.next;
+            current.next = previous;
+            previous = current;
+            current = following;
+        }
+
+        head = previous;
+    }
+
     public void print() {
         StringBuilder sb = new StringBuilder();
         if (head == null) {
