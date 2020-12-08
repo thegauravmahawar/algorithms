@@ -54,6 +54,7 @@
 - [Linked List Cycle II](LinkedListCycle2.java)
 - [Intersection of Two Linked Lists](IntersectionOfTwoLinkedLists.java)
 - [Reverse Linked List](ReverseLinkedList.java)
+- [Remove Linked List Elements](RemoveLinkedListElements.java)
 
 <h3>Tree</h3>
 
