@@ -39,12 +39,14 @@ public class RemoveLinkedListElements {
     /**
      * @param head
      * @param val
-     * @return
+     * @return ListNode
      */
     private static ListNode removeElements(ListNode<Integer> head, int val) {
 
         if (head == null) return null;
 
+        //check if value at head is equal to "val", if so assign head.next to head.
+        //keep doing this until head is null or head.data is not equal to "val".
         while (head != null && head.data == val) head = head.next;
 
         ListNode<Integer> previous = null;
@@ -52,6 +54,8 @@ public class RemoveLinkedListElements {
         ListNode<Integer> next = current == null ? null : current.next;
 
         while (current != null) {
+            //when current.data is equal to "val", update previous.next to next.
+            //note that in this case value of previous should not be updated as the current is "removed" from the list.
             if (current.data == val && previous != null) previous.next = next;
             else previous = current;
             current = next;
