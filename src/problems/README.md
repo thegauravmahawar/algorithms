@@ -27,6 +27,7 @@
 - [Search Insert Position](SearchInsertPosition.java)
 - [Maximum Subarray](MaximumSubArray.java)
 - [Two Sum II - Input array is sorted](TwoSum2.java)
+- [Best Time to Buy and Sell Stock](BestTimeToBuyAndSellStock.java)
 
 <h3>Strings</h3>
 
