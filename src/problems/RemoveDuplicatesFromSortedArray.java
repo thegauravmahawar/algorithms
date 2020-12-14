@@ -41,8 +41,7 @@ public class RemoveDuplicatesFromSortedArray {
 
         for (int i = 0; i < nums.length - 1; i++) {
             //whenever two adjacent elements are not matching, use the right sided element to be written at index j, and increment j.
-            if (nums[i] != nums[i + 1])
-                nums[j++] = nums[i + 1];
+            if (nums[i] != nums[i + 1]) nums[j++] = nums[i + 1];
         }
         return j;
     }
